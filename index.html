@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ISOLA Fitness Center</title>
+  <link rel="icon" href="images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-inner">
+      <a href="#top" class="logo">
+        <span class="logo-mark"></span>
+        <span class="logo-text">ISOLA</span>
+      </a>
+
+      <button class="burger" id="burger" aria-label="menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="nav">
+        <a href="#about" data-en="About" data-ru="О нас" data-hy="Մեր մասին">About</a>
+        <a href="#zones" data-en="Zones" data-ru="Зоны" data-hy="Գոտիներ">Zones</a>
+        <a href="#pricing" data-en="Pricing" data-ru="Цены" data-hy="Գներ">Pricing</a>
+        <a href="#classes" data-en="Classes" data-ru="Занятия" data-hy="Դասընթացներ">Classes</a>
+        <a href="#timetable" data-en="Timetable" data-ru="Расписание" data-hy="Ժամանակացույց">Timetable</a>
+        <a href="#gallery" data-en="Gallery" data-ru="Галерея" data-hy="Պատկերասրահ">Gallery</a>
+        <a href="#join" data-en="Join Us" data-ru="Записаться" data-hy="Միանալ">Join Us</a>
+        <a href="#contacts" data-en="Contacts" data-ru="Контакты" data-hy="Կապ">Contacts</a>
+      </nav>
+
+      <div class="lang">
+        <button class="lang-btn active" data-lang="en">EN</button>
+        <span>|</span>
+        <button class="lang-btn" data-lang="ru">RU</button>
+        <span>|</span>
+        <button class="lang-btn" data-lang="hy">ARM</button>
+      </div>
+    </div>
+  </header>
+
+
+  <section class="hero" id="top">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="logo-mark logo-mark--xl"></span>
+      <h1 data-en="ISOLA Fitness Center" data-ru="Фитнес-центр ISOLA" data-hy="ISOLA ֆիթնես կենտրոն">ISOLA Fitness Center</h1>
+      <p data-en="Train your body. Calm your mind." data-ru="Тренируйте тело. Успокаивайте ум." data-hy="Մարզիր մարմինդ. Հանգստացրու միտքդ.">Train your body. Calm your mind.</p>
+      <a href="#contacts" class="btn" data-en="Visit us" data-ru="Записаться" data-hy="Այցելել">Visit us</a>
+    </div>
+  </section>
+
+
+  <section class="about" id="about">
+    <div class="about-grid">
+      <div class="about-text">
+        <h2 data-en="A quiet place to train" data-ru="Спокойное место для тренировок" data-hy="Հանգիստ վայր՝ մարզվելու համար">A quiet place to train</h2>
+        <p data-en="ISOLA is a boutique fitness club in the center of Yerevan. We keep the membership small on purpose — so equipment is free when you need it, and nobody is queuing for a squat rack." data-ru="ISOLA — бутиковый фитнес-клуб в центре Еревана. Мы держим клуб закрытым, чтобы тренажёры всегда были свободны, а в зале никогда не было очередей." data-hy="ISOLA-ն բուտիկ ֆիթնես ակումբ է Երևանի կենտրոնում։ Մենք մտածված ենք պահում անդամների թիվը փոքր, որպեսզի տեխնիկան միշտ ազատ լինի, իսկ դահլիճում՝ առանց հերթերի։">ISOLA is a boutique fitness club in the center of Yerevan. We keep the membership small on purpose — so equipment is free when you need it, and nobody is queuing for a squat rack.</p>
+        <p data-en="Modern machines, clean changing rooms, a quiet yoga studio. One building, no chaos." data-ru="Современные тренажёры, чистые раздевалки и отдельный зал для йоги. Всё в одном здании, без суеты." data-hy="Ժամանակակից սարքավորումներ, մաքուր հանդերձարաններ, հանգիստ յոգայի դահլիճ։ Մեկ շենք՝ առանց աղմուկի։">Modern machines, clean changing rooms, a quiet yoga studio. One building, no chaos.</p>
+      </div>
+      <div class="about-image">
+        <img src="images/IMG_8512.PNG" alt="yoga studio">
+      </div>
+    </div>
+
+    <div class="stats">
+      <div class="stat">
+        <div class="stat-num">07:00 – 23:00</div>
+        <div class="stat-label" data-en="Open every day" data-ru="Каждый день" data-hy="Բաց ամեն օր">Open every day</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num" data-en="Limited" data-ru="Закрытый" data-hy="Փակ">Limited</div>
+        <div class="stat-label" data-en="Membership only" data-ru="Только по членству" data-hy="Միայն անդամակցությամբ">Membership only</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">Yerevan</div>
+        <div class="stat-label" data-en="Main St. 40" data-ru="ул. Главная 40" data-hy="Գլխավոր փող. 40">Main St. 40</div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="zones" id="zones">
+    <h2 data-en="Our zones" data-ru="Наши зоны" data-hy="Մեր գոտիները">Our zones</h2>
+    <div class="cards">
+
+      <div class="card">
+        <img src="images/IMG_8508.PNG" alt="">
+        <h3 data-en="Gym" data-ru="Тренажёрный зал" data-hy="Մարզասրահ">Gym</h3>
+        <p data-en="Free weights, cardio and machines from the top European brands. Air-conditioned and well lit." data-ru="Свободные веса, кардио и тренажёры ведущих европейских брендов. Кондиционер, хороший свет." data-hy="Ազատ ծանրաձողեր, կարդիո և սարքավորումներ առաջատար եվրոպական ապրանքանիշերից։ Կոնդիցիոներ, լավ լուսավորություն։">Free weights, cardio and machines from the top European brands. Air-conditioned and well lit.</p>
+      </div>
+
+      <div class="card">
+        <img src="images/IMG_8512.PNG" alt="">
+        <h3 data-en="Yoga &amp; Stretching" data-ru="Йога и стретчинг" data-hy="Յոգա և ձգում">Yoga &amp; Stretching</h3>
+        <p data-en="A separate studio with mats, blocks and bolsters. Group classes in the morning, free practice the rest of the day." data-ru="Отдельный зал с ковриками, блоками и болстерами. Утром — групповые занятия, потом свободная практика." data-hy="Առանձին դահլիճ՝ գորգերով, բլոկներով և բոլստերներով։ Առավոտյան՝ խմբային դասեր, հետո՝ ազատ պրակտիկա։">A separate studio with mats, blocks and bolsters. Group classes in the morning, free practice the rest of the day.</p>
+      </div>
+
+      <div class="card">
+        <img src="images/IMG_8506.PNG" alt="">
+        <h3 data-en="Locker rooms" data-ru="Раздевалки" data-hy="Հանդերձարան">Locker rooms</h3>
+        <p data-en="Individual lockers with keys, hot showers, slippers on request. Clean towels every day." data-ru="Индивидуальные шкафчики с ключами, горячий душ, тапочки по запросу. Чистые полотенца каждый день." data-hy="Անհատական պահարաններ բանալիներով, տաք ցնցուղ, թափիկներ՝ ըստ պահանջի։ Ամեն օր մաքուր սրբիչներ։">Individual lockers with keys, hot showers, slippers on request. Clean towels every day.</p>
+      </div>
+
+      <div class="card">
+        <img src="images/IMG_8521.JPG" alt="">
+        <h3 data-en="Massage room" data-ru="Массажный кабинет" data-hy="Մերսման սենյակ">Massage room</h3>
+        <p data-en="Recovery sessions with a certified therapist. Book at the reception." data-ru="Восстановительный массаж у сертифицированного специалиста. Запись на ресепшен." data-hy="Վերականգնողական մերսում սերտիֆիկացված մասնագետի մոտ։ Գրանցումը՝ ընդունարանում։">Recovery sessions with a certified therapist. Book at the reception.</p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="pricing" id="pricing">
+    <h2 data-en="Pricing" data-ru="Цены" data-hy="Գներ">Pricing</h2>
+    <div class="tiers">
+
+      <div class="tier">
+        <h3 data-en="Essential" data-ru="Essential" data-hy="Essential">Essential</h3>
+        <ul>
+          <li data-en="Gym access" data-ru="Доступ в зал" data-hy="Մարզասրահի մուտք">Gym access</li>
+          <li data-en="Locker room" data-ru="Раздевалка" data-hy="Հանդերձարան">Locker room</li>
+          <li data-en="Free Wi-Fi" data-ru="Бесплатный Wi-Fi" data-hy="Անվճար Wi-Fi">Free Wi-Fi</li>
+          <li data-en="Open training area" data-ru="Открытая зона" data-hy="Բաց մարզման գոտի">Open training area</li>
+        </ul>
+        <div class="price"><strong>29,000</strong> <span data-en="AMD / month" data-ru="драм / мес." data-hy="ՀՀ դրամ / ամիս">AMD / month</span></div>
+        <a href="#join" class="btn btn-small" data-en="Choose" data-ru="Выбрать" data-hy="Ընտրել">Choose</a>
+      </div>
+
+      <div class="tier">
+        <h3 data-en="Signature" data-ru="Signature" data-hy="Signature">Signature</h3>
+        <ul>
+          <li data-en="Full gym access" data-ru="Полный доступ в зал" data-hy="Մարզասրահի լրիվ մուտք">Full gym access</li>
+          <li data-en="Group classes" data-ru="Групповые занятия" data-hy="Խմբային դասեր">Group classes</li>
+          <li data-en="Yoga &amp; Pilates" data-ru="Йога и пилатес" data-hy="Յոգա և պիլատես">Yoga &amp; Pilates</li>
+          <li data-en="Recovery area" data-ru="Зона восстановления" data-hy="Վերականգնման գոտի">Recovery area</li>
+          <li data-en="Free drinks" data-ru="Бесплатные напитки" data-hy="Անվճար ըմպելիքներ">Free drinks</li>
+        </ul>
+        <div class="price"><strong>45,000</strong> <span data-en="AMD / month" data-ru="драм / мес." data-hy="ՀՀ դրամ / ամիս">AMD / month</span></div>
+        <a href="#join" class="btn btn-small" data-en="Choose" data-ru="Выбрать" data-hy="Ընտրել">Choose</a>
+      </div>
+
+      <div class="tier">
+        <h3 data-en="Elite" data-ru="Elite" data-hy="Elite">Elite</h3>
+        <ul>
+          <li data-en="Unlimited access" data-ru="Безлимитный доступ" data-hy="Անսահմանափակ մուտք">Unlimited access</li>
+          <li data-en="Personal trainer sessions" data-ru="Персональный тренер" data-hy="Անհատական մարզիչ">Personal trainer sessions</li>
+          <li data-en="Sauna &amp; massage" data-ru="Сауна и массаж" data-hy="Սաունա և մերսում">Sauna &amp; massage</li>
+          <li data-en="VIP lounge" data-ru="VIP-зона" data-hy="VIP սրահ">VIP lounge</li>
+          <li data-en="Priority booking" data-ru="Приоритетная запись" data-hy="Առաջնահերթ ամրագրում">Priority booking</li>
+        </ul>
+        <div class="price"><strong>75,000</strong> <span data-en="AMD / month" data-ru="драм / мес." data-hy="ՀՀ դրամ / ամիս">AMD / month</span></div>
+        <a href="#join" class="btn btn-small" data-en="Choose" data-ru="Выбрать" data-hy="Ընտրել">Choose</a>
+      </div>
+
+      <div class="tier">
+        <h3 data-en="Day Pass" data-ru="Дневной абонемент" data-hy="Օրական մուտք">Day Pass</h3>
+        <ul>
+          <li data-en="1-day gym access" data-ru="1 день в зале" data-hy="1-օրյա մուտք">1-day gym access</li>
+          <li data-en="Full training area access" data-ru="Доступ ко всем зонам" data-hy="Բոլոր գոտիների մուտք">Full training area access</li>
+          <li data-en="Locker room" data-ru="Раздевалка" data-hy="Հանդերձարան">Locker room</li>
+          <li data-en="Free Wi-Fi" data-ru="Бесплатный Wi-Fi" data-hy="Անվճար Wi-Fi">Free Wi-Fi</li>
+        </ul>
+        <div class="price"><strong>5,000</strong> <span data-en="AMD / day" data-ru="драм / день" data-hy="ՀՀ դրամ / օր">AMD / day</span></div>
+        <a href="#join" class="btn btn-small" data-en="Choose" data-ru="Выбрать" data-hy="Ընտրել">Choose</a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="classes" id="classes">
+    <h2 data-en="Classes" data-ru="Занятия" data-hy="Դասընթացներ">Classes</h2>
+    <div class="class-grid">
+
+      <div class="class-card">
+        <h3 data-en="Cardio" data-ru="Кардио" data-hy="Կարդիո">Cardio</h3>
+        <p data-en="Running, cycling, light workouts." data-ru="Бег, велотренажёр, лёгкие тренировки." data-hy="Վազք, հեծանվասպորտ, թեթև մարզումներ։">Running, cycling, light workouts.</p>
+      </div>
+
+      <div class="class-card">
+        <h3 data-en="Strength" data-ru="Сила" data-hy="Ուժային">Strength</h3>
+        <p data-en="Muscle building and weight training." data-ru="Набор массы и силовые тренировки." data-hy="Մկանների կառուցում և ծանրաձողի մարզում։">Muscle building and weight training.</p>
+      </div>
+
+      <div class="class-card">
+        <h3 data-en="Yoga" data-ru="Йога" data-hy="Յոգա">Yoga</h3>
+        <p data-en="Relaxing and stretching exercises." data-ru="Расслабляющие упражнения и растяжка." data-hy="Հանգստացնող և ձգման վարժություններ։">Relaxing and stretching exercises.</p>
+      </div>
+
+      <div class="class-card">
+        <h3 data-en="Pilates" data-ru="Пилатес" data-hy="Պիլատես">Pilates</h3>
+        <p data-en="Body control and core strength." data-ru="Контроль тела и сила корпуса." data-hy="Մարմնի վերահսկում և կորիզի ուժ։">Body control and core strength.</p>
+      </div>
+
+      <div class="class-card">
+        <h3 data-en="Abs Workout" data-ru="Пресс" data-hy="Որովայնի մարզում">Abs Workout</h3>
+        <p data-en="Belly and core training." data-ru="Тренировка живота и корпуса." data-hy="Որովայնի և կորիզի մարզում։">Belly and core training.</p>
+      </div>
+
+      <div class="class-card">
+        <h3 data-en="Fat Burn" data-ru="Жиросжигание" data-hy="Ճարպայրում">Fat Burn</h3>
+        <p data-en="Fast calorie-burning workouts." data-ru="Быстрое сжигание калорий." data-hy="Արագ կալորիա այրող մարզումներ։">Fast calorie-burning workouts.</p>
+      </div>
+
+      <div class="class-card">
+        <h3 data-en="Group Classes" data-ru="Групповые" data-hy="Խմբային">Group Classes</h3>
+        <p data-en="Fun workouts with music and people." data-ru="Весёлые тренировки с музыкой и компанией." data-hy="Զվարճալի մարզումներ երաժշտությամբ և մարդկանցով։">Fun workouts with music and people.</p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="timetable" id="timetable">
+    <h2 data-en="Timetable" data-ru="Расписание" data-hy="Ժամանակացույց">Timetable</h2>
+    <div class="week">
+
+      <div class="day">
+        <h3 data-en="Monday" data-ru="Понедельник" data-hy="Երկուշաբթի">Monday</h3>
+        <ul>
+          <li><span class="t">08:00</span><span data-en="Cardio (running, light workout)" data-ru="Кардио (бег, лёгкая тренировка)" data-hy="Կարդիո (վազք, թեթև մարզում)">Cardio (running, light workout)</span></li>
+          <li><span class="t">10:00</span><span data-en="Yoga / stretching" data-ru="Йога / стретчинг" data-hy="Յոգա / ձգում">Yoga / stretching</span></li>
+          <li><span class="t">18:00</span><span data-en="Strength training" data-ru="Силовая" data-hy="Ուժային մարզում">Strength training</span></li>
+          <li><span class="t">20:00</span><span data-en="Group class" data-ru="Групповая" data-hy="Խմբային դաս">Group class</span></li>
+        </ul>
+      </div>
+
+      <div class="day">
+        <h3 data-en="Tuesday" data-ru="Вторник" data-hy="Երեքշաբթի">Tuesday</h3>
+        <ul>
+          <li><span class="t">08:00</span><span data-en="Fat burn workout" data-ru="Жиросжигание" data-hy="Ճարպայրման մարզում">Fat burn workout</span></li>
+          <li><span class="t">11:00</span><span data-en="Stretching" data-ru="Стретчинг" data-hy="Ձգում">Stretching</span></li>
+          <li><span class="t">17:00</span><span data-en="Abs workout" data-ru="Пресс" data-hy="Որովայնի մարզում">Abs workout</span></li>
+          <li><span class="t">19:00</span><span data-en="Dance / group training" data-ru="Танцы / групповая" data-hy="Պար / խմբային">Dance / group training</span></li>
+        </ul>
+      </div>
+
+      <div class="day">
+        <h3 data-en="Wednesday" data-ru="Среда" data-hy="Չորեքշաբթի">Wednesday</h3>
+        <ul>
+          <li><span class="t">09:00</span><span data-en="Yoga" data-ru="Йога" data-hy="Յոգա">Yoga</span></li>
+          <li><span class="t">10:30</span><span data-en="Cardio" data-ru="Кардио" data-hy="Կարդիո">Cardio</span></li>
+          <li><span class="t">18:00</span><span data-en="Arms &amp; back workout" data-ru="Руки и спина" data-hy="Ձեռքեր և մեջք">Arms &amp; back workout</span></li>
+          <li><span class="t">20:00</span><span data-en="Group class" data-ru="Групповая" data-hy="Խմբային դաս">Group class</span></li>
+        </ul>
+      </div>
+
+      <div class="day">
+        <h3 data-en="Thursday" data-ru="Четверг" data-hy="Հինգշաբթի">Thursday</h3>
+        <ul>
+          <li><span class="t">08:00</span><span data-en="Light workout" data-ru="Лёгкая тренировка" data-hy="Թեթև մարզում">Light workout</span></li>
+          <li><span class="t">10:00</span><span data-en="Stretching / mobility" data-ru="Стретчинг / мобильность" data-hy="Ձգում / շարժունություն">Stretching / mobility</span></li>
+          <li><span class="t">17:00</span><span data-en="Leg workout" data-ru="Ноги" data-hy="Ոտքերի մարզում">Leg workout</span></li>
+          <li><span class="t">19:00</span><span data-en="Functional training" data-ru="Функциональная" data-hy="Ֆունկցիոնալ մարզում">Functional training</span></li>
+        </ul>
+      </div>
+
+      <div class="day">
+        <h3 data-en="Friday" data-ru="Пятница" data-hy="Ուրբաթ">Friday</h3>
+        <ul>
+          <li><span class="t">09:00</span><span data-en="Yoga" data-ru="Йога" data-hy="Յոգա">Yoga</span></li>
+          <li><span class="t">11:00</span><span data-en="Fat burn cardio" data-ru="Жиросжигающее кардио" data-hy="Ճարպայրման կարդիո">Fat burn cardio</span></li>
+          <li><span class="t">18:00</span><span data-en="Full body workout" data-ru="Все тело" data-hy="Ողջ մարմնի մարզում">Full body workout</span></li>
+          <li><span class="t">20:00</span><span data-en="Group class" data-ru="Групповая" data-hy="Խմբային դաս">Group class</span></li>
+        </ul>
+      </div>
+
+      <div class="day">
+        <h3 data-en="Saturday" data-ru="Суббота" data-hy="Շաբաթ">Saturday</h3>
+        <ul>
+          <li><span class="t">10:00</span><span data-en="Open gym (free training)" data-ru="Открытый зал" data-hy="Բաց մարզասրահ">Open gym (free training)</span></li>
+          <li><span class="t">12:00</span><span data-en="Personal training" data-ru="Персональная" data-hy="Անհատական մարզում">Personal training</span></li>
+          <li><span class="t">16:00</span><span data-en="Light stretching" data-ru="Лёгкий стретчинг" data-hy="Թեթև ձգում">Light stretching</span></li>
+        </ul>
+      </div>
+
+      <div class="day rest">
+        <h3 data-en="Sunday" data-ru="Воскресенье" data-hy="Կիրակի">Sunday</h3>
+        <p data-en="Rest day" data-ru="Выходной" data-hy="Հանգստի օր">Rest day</p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="gallery" id="gallery">
+    <h2 data-en="Gallery" data-ru="Галерея" data-hy="Պատկերասրահ">Gallery</h2>
+    <div class="grid">
+      <img src="images/IMG_8508.PNG" alt="" loading="lazy">
+      <img src="images/IMG_8512.PNG" alt="" loading="lazy">
+      <img src="images/IMG_8506.PNG" alt="" loading="lazy">
+      <img src="images/IMG_8525.JPG" alt="" loading="lazy">
+      <img src="images/IMG_8521.JPG" alt="" loading="lazy">
+      <img src="images/IMG_8517.PNG" alt="" loading="lazy">
+      <img src="images/IMG_8524.JPG" alt="" loading="lazy">
+    </div>
+  </section>
+
+
+  <section class="join" id="join">
+    <h2 data-en="Join Us" data-ru="Записаться" data-hy="Միանալ մեզ">Join Us</h2>
+    <p class="join-lead" data-en="Online registration — leave your details and we'll get back to you." data-ru="Онлайн-запись — оставьте контакты, мы свяжемся с вами." data-hy="Առցանց գրանցում — թողեք ձեր տվյալները, մենք կկապվենք ձեզ հետ։">Online registration — leave your details and we'll get back to you.</p>
+
+    <form class="form" id="joinForm">
+      <div class="field">
+        <label for="f-name" data-en="Name" data-ru="Имя" data-hy="Անուն">Name</label>
+        <input id="f-name" name="name" type="text" required>
+      </div>
+      <div class="field">
+        <label for="f-email" data-en="Email" data-ru="Email" data-hy="Էլ. փոստ">Email</label>
+        <input id="f-email" name="email" type="email" required>
+      </div>
+      <div class="field">
+        <label for="f-phone" data-en="Phone" data-ru="Телефон" data-hy="Հեռախոս">Phone</label>
+        <input id="f-phone" name="phone" type="tel" required>
+      </div>
+      <div class="field">
+        <label for="f-plan" data-en="Plan" data-ru="Тариф" data-hy="Փաթեթ">Plan</label>
+        <select id="f-plan" name="plan" required>
+          <option value="Essential">Essential</option>
+          <option value="Signature" selected>Signature</option>
+          <option value="Elite">Elite</option>
+          <option value="Day Pass" data-en="Day Pass" data-ru="Дневной" data-hy="Օրական">Day Pass</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="f-message" data-en="Message" data-ru="Сообщение" data-hy="Հաղորդագրություն">Message</label>
+        <textarea id="f-message" name="message" rows="4"></textarea>
+      </div>
+      <button type="submit" class="btn" data-en="Send" data-ru="Отправить" data-hy="Ուղարկել">Send</button>
+    </form>
+
+    <div class="success" id="success">
+      <h3 data-en="Thank you!" data-ru="Спасибо!" data-hy="Շնորհակալություն!">Thank you!</h3>
+      <p>
+        <span class="success-text" data-en="We've received your request. We'll get back to you shortly." data-ru="Мы получили вашу заявку. Скоро свяжемся с вами." data-hy="Մենք ստացանք ձեր հայտը։ Շուտով կկապվենք ձեզ հետ։">We've received your request. We'll get back to you shortly.</span>
+      </p>
+    </div>
+  </section>
+
+
+  <section class="contacts" id="contacts">
+    <h2 data-en="Visit us" data-ru="Приезжайте к нам" data-hy="Այցելեք մեզ">Visit us</h2>
+    <div class="contacts-grid">
+      <div class="contact-info">
+        <div class="row">
+          <span class="label" data-en="Address" data-ru="Адрес" data-hy="Հասցե">Address</span>
+          <span data-en="Main St. 40, Yerevan, Armenia" data-ru="ул. Главная 40, Ереван, Армения" data-hy="Գլխավոր փող. 40, Երևան, Հայաստան">Main St. 40, Yerevan, Armenia</span>
+        </div>
+        <div class="row">
+          <span class="label" data-en="Phone" data-ru="Телефон" data-hy="Հեռախոս">Phone</span>
+          <a href="tel:+000888000">+000 888 000</a>
+        </div>
+        <div class="row">
+          <span class="label">Email</span>
+          <a href="#">hello@isola.am</a>
+        </div>
+        <div class="row">
+          <span class="label" data-en="Hours" data-ru="Часы работы" data-hy="Ժամեր">Hours</span>
+          <span>07:00 – 23:00</span>
+        </div>
+      </div>
+
+      <div class="map-box">
+        <span class="logo-mark logo-mark--lg"></span>
+        <div class="map-text">
+          <strong>ISOLA</strong><br>
+          <span data-en="Main St. 40" data-ru="ул. Главная 40" data-hy="Գլխավոր փող. 40">Main St. 40</span><br>
+          <span data-en="Yerevan" data-ru="Ереван" data-hy="Երևան">Yerevan</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">ISOLA <span data-en="Fitness Center" data-ru="Фитнес-центр" data-hy="Ֆիթնես կենտրոն">Fitness Center</span></div>
+      <div class="footer-links">
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">YouTube</a>
+        <a href="#">LinkedIn</a>
+      </div>
+      <div class="footer-copy">© 2026 ISOLA. <span data-en="All rights reserved." data-ru="Все права защищены." data-hy="Բոլոր իրավունքները պաշտպանված են։">All rights reserved.</span></div>
+    </div>
+  </footer>
+
+
+  <div class="lightbox" id="lightbox">
+    <img src="" alt="">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
